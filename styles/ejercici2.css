@@ -5,6 +5,26 @@
     font-family: Arial, sans-serif;
   }
   
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    background: #dcdde1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  header .logo {
+    max-width: 100px;
+  }
+
   body {
     display: flex;
     justify-content: center;
@@ -39,14 +59,15 @@
   }
   
   .box {
-    width: 200px;
-    height: 200px;
+    flex: 1;
+    height: 150px;
     background: #fff;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    padding: 10px;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -79,16 +100,21 @@
     transform: scale(1.1);
   }
   
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background: #dcdde1;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #dcdde1;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   .footer-text {
     font-size: 14px;

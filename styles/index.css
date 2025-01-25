@@ -14,11 +14,21 @@
     color: #333;
   }
   
-  header {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  background: #dcdde1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  max-width: 100px;
+}
   .container {
     display: flex;
     justify-content: center;
@@ -59,29 +69,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .footer-text {
     flex: 1;
   }
-  
-  .footer-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .footer-button {
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 2px solid #333;
-    border-radius: 4px;
-    transition: background 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .footer-button:hover {
-    background: #333;
-    transform: scale(1.1);
-  }
+
   

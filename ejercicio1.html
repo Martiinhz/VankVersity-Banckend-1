@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Texto y Resumen</title>
+  <title>Texto y Resumen con IA</title>
   <link rel="stylesheet" href="styles/ejercicio1.css">
 </head>
 <body>
   <div class="main-container">
     <div class="content">
-      <div class="box" id="texto">Texto</div>
-      <div class="box" id="resumen">Resumen</div>
+      <!-- Área para ingresar texto -->
+      <textarea class="box" id="texto" placeholder="Escribe tu texto aquí..."></textarea>
+      <!-- Área no editable para mostrar el resumen -->
+      <div class="box" id="resumen">El resumen aparecerá aquí...</div>
     </div>
     <div class="action">
-      <button class="button">Resumir</button>
+      <button class="button" onclick="resumirConIA()">Resumir</button>
     </div>
     <footer>
       <p class="footer-text">Página creada por Martin y Sebastian & derechos reservados etc</p>
@@ -24,5 +26,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/Resumen.js"></script>
 </body>
 </html>

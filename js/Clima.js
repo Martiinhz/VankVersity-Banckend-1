@@ -1,4 +1,3 @@
-// Función para obtener el clima de Meteosource
 const obtenerClimaMeteosource = () => {
   const apiKey = "hi7z1bz5om0dyufbpixh3eargmnogxuypeqoxkfw";
   const url = `https://www.meteosource.com/api/v1/free/point?place_id=medellin&sections=current&timezone=auto&language=en&units=metric&key=${apiKey}`;
